@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Каталог — Чайный Путь</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    />
+  </head>
+  <body data-page="catalog">
+    <header class="header"></header>
+
+    <main class="catalog-page">
+      <h1 class="page-title">Каталог</h1>
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a>
+        <span class="breadcrumbs__sep">/</span>
+        <span>Каталог</span>
+      </nav>
+
+      <button class="drawer-toggle" type="button" aria-controls="drawer">
+        <span aria-hidden="true">☰</span> Меню и фильтры
+      </button>
+
+      <div class="drawer-backdrop" data-drawer-backdrop hidden></div>
+
+      <div class="catalog-page__layout">
+        <aside class="drawer" id="drawer" data-drawer>
+          <button class="drawer__close" type="button" data-drawer-close aria-label="Закрыть">×</button>
+          <nav class="drawer__nav" aria-label="Навигация">
+            <a class="drawer__nav-link" href="index.html">Главная</a>
+            <a class="drawer__nav-link" href="catalog.html">Каталог</a>
+            <a class="drawer__nav-link" href="cart.html">Корзина</a>
+          </nav>
+          <div class="filter"></div>
+        </aside>
+
+        <section class="catalog-page__main">
+          <div class="catalog-toolbar">
+            <span class="catalog-toolbar__count" data-count>Загрузка…</span>
+            <label class="catalog-toolbar__sort">
+              <span>Сортировать:</span>
+              <select data-sort>
+                <option value="default">по умолчанию</option>
+                <option value="price-asc">по цене ↑</option>
+                <option value="price-desc">по цене ↓</option>
+                <option value="name-asc">по названию А–Я</option>
+                <option value="name-desc">по названию Я–А</option>
+              </select>
+            </label>
+          </div>
+          <div class="catalog"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script type="module" src="../index.js"></script>
+  </body>
+</html>

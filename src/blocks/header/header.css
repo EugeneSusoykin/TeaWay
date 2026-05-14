@@ -1,0 +1,90 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: var(--color-card-bg);
+  border-bottom: 1px solid var(--tea-placeholder);
+}
+
+.header__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 64px;
+  padding: 0 16px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--tea-green);
+}
+
+.header__nav {
+  display: none;
+  gap: 32px;
+}
+
+.header__nav-link {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--tea-text);
+  transition: color 0.2s ease;
+}
+.header__nav-link:hover {
+  color: var(--tea-green);
+}
+
+.header__cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.header__cart-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 10px;
+  background-color: var(--tea-green);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .header__inner {
+    height: 72px;
+    padding: 0 24px;
+  }
+  .header__nav {
+    display: flex;
+  }
+  .header__brand {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__inner {
+    padding: 0 40px;
+  }
+}
