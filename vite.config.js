@@ -3,7 +3,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: 'src',
-  base: '/tea-shop-frontend/',
+  base: '/',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
