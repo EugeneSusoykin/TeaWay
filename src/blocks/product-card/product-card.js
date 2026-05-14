@@ -5,7 +5,7 @@ const BADGE_COLORS = {
   'Белый чай': 'var(--tea-cat-white)',
   'Зелёный чай': 'var(--tea-cat-green)',
   'Жёлтый чай': 'var(--tea-cat-yellow)',
-  Улун: 'var(--tea-cat-oolong)',
+  'Улун': 'var(--tea-cat-oolong)',
   'Красный чай': 'var(--tea-cat-red)',
   'Шу Пуэр': 'var(--tea-cat-puer-shu)',
   'Шен Пуэр': 'var(--tea-cat-puer-shen)',
